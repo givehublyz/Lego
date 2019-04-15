@@ -33,7 +33,10 @@ SOURCES += \
     design/designglwidget.cpp \
     design/designopwidget.cpp \
     design/designwidget.cpp \
-    edit/editwidget.cpp
+    edit/editwidget.cpp \
+    component/component.cpp \
+    component/simpleroundedcomponent.cpp \
+    component/vertexposdatafactory.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -42,7 +45,10 @@ HEADERS += \
     design/designglwidget.h \
     design/designopwidget.h \
     design/designwidget.h \
-    edit/editwidget.h
+    edit/editwidget.h \
+    component/component.h \
+    component/simpleroundedcomponent.h \
+    component/vertexposdatafactory.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
