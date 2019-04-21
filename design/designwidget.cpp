@@ -8,6 +8,7 @@ DesignWidget::DesignWidget()
     this->addWidget(opWidget);
     this->setStretchFactor(0, 1);
     this->setStretchFactor(1, 1);
+    glWidget->setFocus();
 }
 
 QString DesignWidget::getName(){

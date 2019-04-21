@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shaders/simple_vsh.vsh</file>
+        <file>shaders/simple_fsh.frag</file>
+        <file>model/lego.obj</file>
+        <file>model/teapot.obj</file>
+    </qresource>
+</RCC>

@@ -36,7 +36,14 @@ SOURCES += \
     edit/editwidget.cpp \
     component/component.cpp \
     component/simpleroundedcomponent.cpp \
-    component/vertexposdatafactory.cpp
+    component/vertexposdatafactory.cpp \
+    common/mesh.cpp \
+    common/buffer.cpp \
+    common/shader.cpp \
+    common/camera.cpp \
+    common/light.cpp \
+    common/material.cpp \
+    common/transform.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -48,9 +55,19 @@ HEADERS += \
     edit/editwidget.h \
     component/component.h \
     component/simpleroundedcomponent.h \
-    component/vertexposdatafactory.h
+    component/vertexposdatafactory.h \
+    common/mesh.h \
+    common/buffer.h \
+    common/shader.h \
+    common/camera.h \
+    common/light.h \
+    common/material.h \
+    common/transform.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc
